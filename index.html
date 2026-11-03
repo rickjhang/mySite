@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ========================================== -->
+    <!-- SEO 基礎架構 (Search Engine Optimization)  -->
+    <!-- ========================================== -->
+    <title>志騰 Chih-Teng | 資深產品設計主任 (Senior Product Design Lead)</title>
+    <meta name="description" content="我是志騰，目前擔任資深產品設計主任與產品線 Leader。專注於從市場、商業與公司策略視角推進產品成長，精通 UI/UX 設計、Roadmap 制定與跨部門協作。">
+    <meta name="keywords" content="志騰, Chih-Teng, 資深產品設計師, 產品設計主任, Product Design Lead, UI/UX, 產品策略, 團隊管理, 前端開發, 電商設計">
+    <meta name="author" content="志騰 Chih-Teng">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/"> <!-- 建議替換為您的真實網址 -->
+
+    <!-- ========================================== -->
+    <!-- Open Graph (Facebook/LINE/LinkedIn 分享優化) -->
+    <!-- ========================================== -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="志騰 Chih-Teng | 資深產品設計主任">
+    <meta property="og:description" content="從 1 到 100 推進產品成長。專注於市場與商業策略，取得設計與開發的完美平衡。">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg"> <!-- 建議放一張 1200x630 的個人形象照或網頁截圖 -->
+    <meta property="og:site_name" content="志騰的產品設計作品集">
+
+    <!-- ========================================== -->
+    <!-- Twitter Card -->
+    <!-- ========================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="志騰 Chih-Teng | 資深產品設計主任">
+    <meta name="twitter:description" content="從 1 到 100 推進產品成長。專注於市場與商業策略，取得設計與開發的完美平衡。">
+    <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg">
+
+    <!-- ========================================== -->
+    <!-- AEO / GEO 結構化資料 (讓 AI 引擎看懂你的專業) -->
+    <!-- ========================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "志騰",
+      "alternateName": "Chih-Teng",
+      "jobTitle": "資深產品設計主任 (Senior Product Design Lead)",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "in house 電商"
+      },
+      "description": "擔任資深產品設計主任與產品線 Leader，專注於從市場、商業、公司策略推進產品成長，並建立內部工作與跨部門協作流程。",
+      "knowsAbout": [
+        "UI/UX Design",
+        "Product Strategy",
+        "Product Management",
+        "Roadmap Planning",
+        "Cross-functional Team Leadership",
+        "Web Development"
+      ],
+      "url": "https://yourdomain.com/",
+      "sameAs": [
+        "https://www.linkedin.com/in/your-profile" 
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a', // Slate 900
+                        secondary: '#3b82f6', // Blue 500
+                        accent: '#10b981', // Emerald 500
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #3b82f6, #10b981);
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-200 selection:text-blue-900">
+
+    <!-- 導覽列 (使用 header 增強語意) -->
+    <header>
+        <nav class="fixed w-full z-50 glass-nav transition-all duration-300" aria-label="主要導覽列">
+            <div class="max-w-6xl mx-auto px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <div class="flex-shrink-0 font-bold text-xl tracking-wider text-primary">
+                        CHIH-TENG.
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-8">
+                            <a href="#about" class="text-slate-600 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">關於我</a>
+                            <a href="#expertise" class="text-slate-600 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">專業領域</a>
+                            <a href="#lifestyle" class="text-slate-600 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">生活與探索</a>
+                        </div>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-btn" aria-label="開啟選單" aria-expanded="false" class="text-slate-600 hover:text-primary focus:outline-none">
+                            <i data-lucide="menu" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- 手機版選單 -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 absolute w-full" aria-label="手機版選單">
+                <div class="px-4 pt-2 pb-6 space-y-1 sm:px-3 shadow-lg">
+                    <a href="#about" class="block text-slate-600 hover:bg-slate-50 hover:text-secondary px-3 py-3 rounded-md text-base font-medium">關於我</a>
+                    <a href="#expertise" class="block text-slate-600 hover:bg-slate-50 hover:text-secondary px-3 py-3 rounded-md text-base font-medium">專業領域</a>
+                    <a href="#lifestyle" class="block text-slate-600 hover:bg-slate-50 hover:text-secondary px-3 py-3 rounded-md text-base font-medium">生活與探索</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要內容區塊 (使用 main 標籤包覆，提升 SEO) -->
+    <main>
+        <!-- Hero 區塊 -->
+        <section id="hero" aria-label="自我介紹" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <div class="max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl fade-in-up">
+                    <p class="text-secondary font-semibold tracking-wide uppercase mb-3 flex items-center gap-2">
+                        <i data-lucide="compass" class="w-5 h-5" aria-hidden="true"></i>
+                        Senior Product Design Lead
+                    </p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-primary leading-tight mb-6">
+                        你好，我是志騰。<br>
+                        <span class="text-gradient">從 1 到 100 推進產品成長。</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl">
+                        專注於從市場、商業、公司策略的更高視角出發，在符合使用者需求的前提下，取得設計與開發的完美平衡。
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#expertise" class="px-8 py-4 bg-primary text-white rounded-full font-medium hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
+                            了解我的專業 <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/3 w-[800px] h-[800px] bg-gradient-to-br from-blue-50 to-emerald-50 rounded-full blur-3xl opacity-60 -z-10"></div>
+        </section>
+
+        <!-- 關於我 & 核心能力 -->
+        <section id="about" aria-label="專業經歷與核心能力" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="fade-in-up delay-100">
+                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">不僅是設計，<br>更是產品的領航者。</h2>
+                        <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                            目前在 in house 電商擔任資深產品設計主任，同時也擔任產品線 Leader。我注重細節，認為優秀的產品必須在「使用者需求」與「技術開發」之間取得最佳平衡。
+                        </p>
+                        <p class="text-slate-600 text-lg leading-relaxed">
+                            平常除了關注 UI/UX 領域的文章與講座，我也積極學習程式開發內容。透過不斷吸收新知，觸及更多相關領域專業，持續提升自我能力的廣度及深度。
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 fade-in-up delay-200">
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow">
+                            <div class="w-12 h-12 bg-blue-100 text-secondary rounded-xl flex items-center justify-center mb-4">
+                                <i data-lucide="target" class="w-6 h-6" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="font-bold text-xl text-primary mb-2">制定 Roadmap</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                從定義目標到執行前期研究分析，擬定策略及解決方案，讓團隊以更明確的框架執行規劃。
+                            </p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow">
+                            <div class="w-12 h-12 bg-emerald-100 text-accent rounded-xl flex items-center justify-center mb-4">
+                                <i data-lucide="users" class="w-6 h-6" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="font-bold text-xl text-primary mb-2">團隊協作建立</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                幫助團隊建立內部工作流程以及跨部門協作流程，讓設計團隊更有系統性地維持運作。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 專業領域 -->
+        <section id="expertise" aria-label="跨領域專業優勢" class="py-20 bg-slate-900 text-white">
+            <div class="max-w-6xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">專業視角與實踐</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto text-lg">從商業策略到落地執行，具備軟硬實力的全方位思維。</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-8 rounded-2xl bg-slate-800/50 border border-slate-700 hover:bg-slate-800 transition-colors fade-in-up delay-100">
+                        <i data-lucide="line-chart" class="w-8 h-8 text-blue-400 mb-6" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold mb-3">商業與市場宏觀</h3>
+                        <p class="text-slate-400 leading-relaxed">
+                            跳脫純設計視角，從市場趨勢、商業模式與公司策略的高層次角度，評估並推動產品的成長歷程。
+                        </p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-slate-800/50 border border-slate-700 hover:bg-slate-800 transition-colors fade-in-up delay-200">
+                        <i data-lucide="layers" class="w-8 h-8 text-emerald-400 mb-6" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold mb-3">UI/UX 與開發平衡</h3>
+                        <p class="text-slate-400 leading-relaxed">
+                            注重細節的同時，理解程式開發邏輯。確保設計不僅符合使用者體驗，更能在開發實作中取得最佳平衡。
+                        </p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-slate-800/50 border border-slate-700 hover:bg-slate-800 transition-colors fade-in-up delay-300">
+                        <i data-lucide="git-merge" class="w-8 h-8 text-purple-400 mb-6" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold mb-3">系統化流程建構</h3>
+                        <p class="text-slate-400 leading-relaxed">
+                            制定清晰的 Roadmap，並優化跨部門協作流程，降低溝通摩擦，讓團隊能在明確的框架下高效產出。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 生活與探索 -->
+        <section id="lifestyle" aria-label="生活探索與個人興趣" class="py-24 bg-slate-50 overflow-hidden">
+            <div class="max-w-6xl mx-auto px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-5 fade-in-up delay-100">
+                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">跳脫框架的<br>生活實踐家。</h2>
+                        <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                            我享受在生活中拓展自己的所見所聞。工作之餘，我喜歡關注<span class="font-bold text-primary">環保、教育、科技、金融</span>等趨勢議題，並透過實際參與來發覺尚未被解決的問題，藉此激發新產品或服務的可能性，保持對市場的高度敏銳。
+                        </p>
+                        <p class="text-slate-600 text-lg leading-relaxed">
+                            平常喜歡打球跟衝浪。透過適當的運動及旅遊，幫助我跳脫以往的思維框架，刺激思緒，保持腦內學習的活耀度。
+                        </p>
+                    </div>
+                    
+                    <div class="lg:col-span-7 relative fade-in-up delay-200 mt-10 lg:mt-0">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-4 pt-8">
+                                <div class="bg-blue-100 rounded-2xl aspect-[4/5] flex flex-col items-center justify-center p-6 text-center shadow-sm hover:-translate-y-1 transition-transform">
+                                    <i data-lucide="waves" class="w-12 h-12 text-blue-500 mb-3" aria-hidden="true"></i>
+                                    <span class="font-bold text-blue-900">衝浪與戶外</span>
+                                    <span class="text-sm text-blue-700 mt-1">跳脫框架，保持平衡</span>
+                                </div>
+                                <div class="bg-amber-100 rounded-2xl aspect-square flex flex-col items-center justify-center p-6 text-center shadow-sm hover:-translate-y-1 transition-transform">
+                                    <i data-lucide="lightbulb" class="w-10 h-10 text-amber-500 mb-3" aria-hidden="true"></i>
+                                    <span class="font-bold text-amber-900">趨勢觀察</span>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="bg-emerald-100 rounded-2xl aspect-square flex flex-col items-center justify-center p-6 text-center shadow-sm hover:-translate-y-1 transition-transform">
+                                    <i data-lucide="leaf" class="w-10 h-10 text-emerald-500 mb-3" aria-hidden="true"></i>
+                                    <span class="font-bold text-emerald-900">永續與教育</span>
+                                </div>
+                                <div class="bg-purple-100 rounded-2xl aspect-[4/5] flex flex-col items-center justify-center p-6 text-center shadow-sm hover:-translate-y-1 transition-transform">
+                                    <i data-lucide="dribbble" class="w-12 h-12 text-purple-500 mb-3" aria-hidden="true"></i>
+                                    <span class="font-bold text-purple-900">籃球運動</span>
+                                    <span class="text-sm text-purple-700 mt-1">團隊協作與敏捷反應</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部 Footer -->
+    <footer class="bg-primary text-slate-400 py-12 border-t border-slate-800" aria-label="頁尾資訊">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-2xl font-black text-white tracking-wider">
+                CHIH-TENG.
+            </div>
+            <div class="text-sm">
+                &copy; <span id="year"></span> 志騰. All rights reserved.
+            </div>
+            <div class="flex space-x-6">
+                <!-- 建議在此處補上真實社群連結，對 SEO 有加分作用 -->
+                <a href="#" aria-label="志騰的 LinkedIn" class="hover:text-white transition-colors">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <a href="mailto:your-email@example.com" aria-label="Email 聯絡志騰" class="hover:text-white transition-colors">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 初始化腳本 -->
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = menu.querySelectorAll('a');
+
+        btn.addEventListener('click', () => {
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !isExpanded);
+            menu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                btn.setAttribute('aria-expanded', 'false');
+                menu.classList.add('hidden');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>
